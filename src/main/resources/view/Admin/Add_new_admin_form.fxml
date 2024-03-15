@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane2" prefHeight="568.0" prefWidth="1380.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AddNewAdminFormController">
+   <children>
+      <ImageView fitHeight="624.0" fitWidth="1380.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/images/HP-Banner-Publishing-Desktop.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00000034" height="586.0" stroke="BLACK" strokeType="INSIDE" width="1380.0" />
+      <TextField fx:id="txtName" layoutX="143.0" layoutY="182.0" prefHeight="49.0" prefWidth="346.0" promptText="Enter Name" stylesheets="@../../assets/styles/signup.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtUserName" layoutX="143.0" layoutY="261.0" prefHeight="49.0" prefWidth="346.0" promptText="Enter Username" stylesheets="@../../assets/styles/signup.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPw" layoutX="144.0" layoutY="340.0" prefHeight="49.0" prefWidth="346.0" promptText="Enter password" stylesheets="@../../assets/styles/signup.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtEmail" layoutX="145.0" layoutY="414.0" prefHeight="49.0" prefWidth="346.0" promptText="Enter Email" stylesheets="@../../assets/styles/signup.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="btnAddAdmin" buttonType="RAISED" layoutX="226.0" layoutY="508.0" onAction="#btnAddAdminOnAction" prefHeight="39.0" prefWidth="181.0" styleClass="button-color2" stylesheets="@../../assets/styles/signup.css" text="Create Account" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="94.0" layoutY="68.0" prefHeight="60.0" prefWidth="617.0" text="Let's Create an Account Together" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

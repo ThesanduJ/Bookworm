@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane2" prefHeight="578.0" prefWidth="861.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AdminProfileFormController">
+   <children>
+      <ImageView fitHeight="791.0" fitWidth="1267.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/images/pexels-efrem-efre-16263863.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00000093" height="792.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="1188.0" />
+      <TextField fx:id="txtName" editable="false" layoutX="450.0" layoutY="178.0" prefHeight="49.0" prefWidth="346.0" promptText="Enter Name" stylesheets="@../../assets/styles/manageAdmin.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtUserName" editable="false" layoutX="450.0" layoutY="270.0" prefHeight="49.0" prefWidth="346.0" promptText="Enter Username" stylesheets="@../../assets/styles/manageAdmin.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPw" editable="false" layoutX="450.0" layoutY="371.0" prefHeight="49.0" prefWidth="346.0" promptText="Enter Password" stylesheets="@../../assets/styles/manageAdmin.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtEmail" editable="false" layoutX="450.0" layoutY="467.0" prefHeight="49.0" prefWidth="346.0" promptText="Enter Email" stylesheets="@../../assets/styles/manageAdmin.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="btnDelete" layoutX="314.0" layoutY="640.0" onAction="#btnDeleteOnAction" stylesheets="@../../assets/styles/manageAdmin.css" text="Delete Account" textFill="WHITE" />
+      <JFXButton fx:id="btnUpdate" layoutX="477.0" layoutY="640.0" onAction="#btnUpdateOnAction" stylesheets="@../../assets/styles/manageAdmin.css" text="Update Account" textFill="WHITE" />
+      <JFXButton fx:id="btnAddAdmin" layoutX="653.0" layoutY="640.0" onAction="#btnAddAdminOnAction" stylesheets="@../../assets/styles/manageAdmin.css" text="Add new Admin" textFill="WHITE" />
+      <JFXButton fx:id="btnLogOut" layoutX="811.0" layoutY="640.0" onAction="#btnLogOutOnAction" prefHeight="28.0" prefWidth="88.0" stylesheets="@../../assets/styles/manageAdmin.css" text="Log out" textFill="WHITE" />
+      <JFXButton fx:id="btnSaveChanges" buttonType="RAISED" layoutX="295.0" layoutY="467.0" onAction="#btnSaveChangesOnAction" prefHeight="28.0" prefWidth="328.0" styleClass="button-color-register" text="Save Changes" textFill="WHITE" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="298.0" layoutY="58.0" prefHeight="60.0" prefWidth="617.0" text="Let's Manage an Account Together" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="822.0" prefWidth="1239.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UserRegisterFormController">
+   <children>
+      <ImageView fitHeight="870.0" fitWidth="1239.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/images/pexels-efrem-efre-16263863.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#000000ad" height="826.0" stroke="BLACK" strokeType="INSIDE" width="1239.0" />
+      <Label layoutX="375.0" layoutY="70.0" prefHeight="94.0" prefWidth="495.0" text="User Registeration" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="54.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="370.0" layoutY="238.0" prefHeight="51.0" prefWidth="475.0" promptText="Enter Your name" stylesheets="@../../assets/styles/user.css">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtEmail" layoutX="371.0" layoutY="338.0" prefHeight="51.0" prefWidth="475.0" promptText="Enter Your Email " stylesheets="@../../assets/styles/user.css">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPwd" layoutX="370.0" layoutY="436.0" prefHeight="51.0" prefWidth="475.0" promptText="Enter Password" stylesheets="@../../assets/styles/user.css">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="btnCreateAccount" buttonType="RAISED" layoutX="460.0" layoutY="667.0" onAction="#btnCreateAccountOnAction" prefHeight="42.0" prefWidth="298.0" stylesheets="@../../assets/styles/user.css" text="Create Account" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXButton>
+      <ComboBox fx:id="cmbBranch" layoutX="372.0" layoutY="537.0" prefHeight="51.0" prefWidth="474.0" promptText="Select a branch" />
+   </children>
+</AnchorPane>

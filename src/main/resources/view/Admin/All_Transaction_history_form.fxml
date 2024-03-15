@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="777.0" prefWidth="1239.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AllTransactionHistoryFormController">
+   <children>
+      <ImageView fitHeight="914.0" fitWidth="1188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/images/payment.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00000098" height="792.0" stroke="BLACK" strokeType="INSIDE" width="1188.0" />
+      <Label layoutX="406.0" layoutY="48.0" prefHeight="65.0" prefWidth="421.0" text="Transaction History" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combType" layoutX="81.0" layoutY="140.0" onAction="#combTypeOnAction" prefHeight="43.0" prefWidth="356.0" promptText="Transaction Type " stylesheets="@../../assets/styles/borrow.css" />
+      <TableView fx:id="tblTransaction" layoutX="81.0" layoutY="230.0" prefHeight="414.0" prefWidth="1070.0">
+        <columns>
+          <TableColumn fx:id="colTransactionId" prefWidth="143.0" text="Transaction Id" />
+          <TableColumn fx:id="ColBookId" prefWidth="132.0" text="Book Id" />
+            <TableColumn fx:id="ColBookName" prefWidth="197.0" text="Book name" />
+            <TableColumn fx:id="colUserId" prefWidth="140.0" text="User Name" />
+            <TableColumn fx:id="colBranchId" prefWidth="150.0" text="Branch Id" />
+            <TableColumn fx:id="colType" prefWidth="163.0" text="Borrow Date" />
+            <TableColumn fx:id="colDate" prefWidth="144.0" text="Return Date" />
+        </columns>
+         <styleClass>
+            <String fx:value="table-row-cell" />
+            <String fx:value="table-view" />
+            <String fx:value="column-header" />
+         </styleClass>
+      </TableView>
+      <TextField fx:id="txtSearch" layoutX="765.0" layoutY="136.0" onAction="#txtSearchOnAction" prefHeight="51.0" prefWidth="386.0" promptText="                Search by User Id" stylesheets="@../../assets/styles/borrow.css">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="43.0" fitWidth="37.0" layoutX="758.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/icons/icons8-search-96.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnOverdue" buttonType="RAISED" layoutX="854.0" layoutY="689.0" onAction="#btnOverdueAction" prefHeight="43.0" prefWidth="279.0" stylesheets="@../../assets/styles/borrow.css" text="Unreturned Books" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

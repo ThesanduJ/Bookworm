@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="792.0" prefWidth="1239.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.ManageBookFormController">
+   <children>
+      <ImageView fitHeight="792.0" fitWidth="1239.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/images/pexels-efrem-efre-16263863.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00000081" height="792.0" stroke="BLACK" strokeType="INSIDE" width="1188.0" />
+      <TextField fx:id="txtTitle" layoutX="82.0" layoutY="200.0" prefHeight="46.0" prefWidth="316.0" promptText="Book Title">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAuthor" layoutX="75.0" layoutY="482.0" prefHeight="46.0" prefWidth="330.0" promptText="Author">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtGenere" layoutX="83.0" layoutY="286.0" prefHeight="46.0" prefWidth="316.0" promptText="Genere">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="cmbBranch" layoutX="75.0" layoutY="371.0" prefHeight="46.0" prefWidth="330.0" promptText="Select a Branch" />
+      <ComboBox fx:id="cmbAvalability" layoutX="75.0" layoutY="605.0" prefHeight="46.0" prefWidth="330.0" promptText="select status" />
+      <Label layoutX="451.0" layoutY="32.0" prefHeight="60.0" prefWidth="368.0" text="Manage Books" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblBook" layoutX="476.0" layoutY="218.0" prefHeight="330.0" prefWidth="655.0">
+        <columns>
+          <TableColumn fx:id="collName" prefWidth="199.0" text="Book Name" />
+          <TableColumn fx:id="colAuthor" prefWidth="157.0" text="Author" />
+            <TableColumn fx:id="colCopies" prefWidth="157.0" text="Branch Name" />
+            <TableColumn fx:id="colAvail" prefWidth="141.0" text="Availability" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnAdd" layoutX="722.0" layoutY="651.0" onAction="#btnAddOnAction" prefHeight="49.0" prefWidth="149.0" stylesheets="@../../assets/styles/book.css" text="Add " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="524.0" layoutY="651.0" onAction="#btnUpdateOnAction" prefHeight="46.0" prefWidth="149.0" stylesheets="@../../assets/styles/book.css" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="921.0" layoutY="650.0" onAction="#btnDeleteOnAction" prefHeight="49.0" prefWidth="149.0" stylesheets="@../../assets/styles/book.css" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

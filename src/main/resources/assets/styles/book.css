@@ -1,0 +1,70 @@
+#author{
+    -fx-border-color: rgba(255, 0, 0, 0) rgba(0, 128, 0, 0) white rgba(255, 255, 0, 0);
+    -fx-background-color: rgba(255, 255, 255, 0);
+    -fx-text-fill: white;
+}
+#bCount{
+    -fx-border-color: rgba(255, 0, 0, 0) rgba(0, 128, 0, 0) white rgba(255, 255, 0, 0);
+    -fx-background-color: rgba(255, 255, 255, 0);
+    -fx-text-fill: white;
+}
+#bTitle{
+    -fx-border-color: rgba(255, 0, 0, 0) rgba(0, 128, 0, 0) white rgba(255, 255, 0, 0);
+    -fx-background-color: rgba(255, 255, 255, 0);
+    -fx-text-fill: white;
+}
+
+#btnUpdate{
+    -fx-background-radius:7px;
+    -fx-border-radius:7px;
+    -fx-background-color: rgb(82, 207, 115);
+}
+#btnAdd{
+    -fx-background-radius:7px;
+    -fx-border-radius:7px;
+    -fx-background-color: rgb(82, 207, 115);
+}
+#btnDelete{
+    -fx-background-radius:7px;
+    -fx-border-radius:7px;
+    -fx-background-color: rgb(82, 207, 115);
+}
+
+#btnUpdate:hover{
+    -fx-background-radius:7px;
+    -fx-border-radius:7px;
+    -fx-background-color: rgb(46, 185, 255);
+}
+#btnAdd:hover{
+    -fx-background-radius:7px;
+    -fx-border-radius:7px;
+    -fx-background-color: rgb(46, 185, 255);
+}
+#btnDelete:hover{
+    -fx-background-radius:7px;
+    -fx-border-radius:7px;
+    -fx-background-color: rgb(46, 185, 255);
+}
+#btnBorrow{
+    -fx-background-radius:7px;
+    -fx-border-radius:7px;
+    -fx-background-color: rgb(82, 207, 115);
+}
+
+#btnBorrow:hover{
+    -fx-background-radius:7px;
+    -fx-border-radius:7px;
+    -fx-background-color: rgb(46, 185, 255);
+}
+#btnReturn{
+    -fx-background-radius:7px;
+    -fx-border-radius:7px;
+    -fx-background-color: rgb(82, 207, 115);
+}
+
+#btnReturn:hover{
+    -fx-background-radius:7px;
+    -fx-border-radius:7px;
+    -fx-background-color: rgb(46, 185, 255);
+}
+

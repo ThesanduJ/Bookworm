@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="792.0" prefWidth="1183.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.BorrowBookFormController">
+   <children>
+      <ImageView fitHeight="792.0" fitWidth="1245.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/images/pexels-efrem-efre-16263863.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#000000af" height="792.0" stroke="BLACK" strokeType="INSIDE" width="1188.0" />
+      <Label layoutX="419.0" layoutY="42.0" prefHeight="65.0" prefWidth="372.0" text="Borrowing Books" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblBook" layoutX="594.0" layoutY="214.0" prefHeight="508.0" prefWidth="564.0">
+        <columns>
+          <TableColumn fx:id="colBookTitle" prefWidth="164.0" text="Book Title" />
+          <TableColumn fx:id="colAuthor" prefWidth="174.0" text="Author" />
+            <TableColumn fx:id="colGener" prefWidth="140.0" text="Genre" />
+            <TableColumn fx:id="colBtnGet" prefWidth="85.0" text="Get" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtSEarch" layoutX="605.0" layoutY="143.0" onAction="#txtSearch" prefHeight="46.0" prefWidth="453.0" promptText="         Search book by name" stylesheets="@../../assets/styles/borrow.css">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <ImageView fx:id="img1" fitHeight="33.0" fitWidth="36.0" layoutX="616.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/icons/icons8-search-96.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="56.0" layoutY="143.0" prefHeight="590.0" prefWidth="526.0">
+         <children>
+            <Accordion layoutX="175.0" layoutY="60.0" />
+            <TextField fx:id="txtBookTitle" editable="false" layoutX="39.0" layoutY="60.0" prefHeight="46.0" prefWidth="414.0" promptText="Book Title" stylesheets="@../../assets/styles/borrow.css">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <TextField fx:id="txtAuthor" editable="false" layoutX="35.0" layoutY="144.0" prefHeight="46.0" prefWidth="414.0" promptText="Author" stylesheets="@../../assets/styles/borrow.css">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <TextField fx:id="txtGener" editable="false" layoutX="35.0" layoutY="225.0" prefHeight="46.0" prefWidth="414.0" promptText="Category" stylesheets="@../../assets/styles/borrow.css">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <ComboBox fx:id="combPeriod" layoutX="35.0" layoutY="301.0" onAction="#combPeriodOnAction" prefHeight="46.0" prefWidth="414.0" promptText="Borrow Period:" style="-fx-background-color: white;" styleClass="text-field" />
+            <Label layoutX="106.0" layoutY="389.0" prefHeight="33.0" prefWidth="113.0" text="Return Date :" textFill="WHITE">
+               <font>
+                  <Font name="DejaVu Serif Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDueDate" layoutX="229.0" layoutY="390.0" prefHeight="33.0" prefWidth="158.0" text="2024-03-03" textFill="RED">
+               <font>
+                  <Font name="DejaVu Serif Bold" size="17.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnBorrow" buttonType="RAISED" layoutX="163.0" layoutY="468.0" onAction="#btnBorrowOnAction" prefHeight="46.0" prefWidth="158.0" stylesheets="@../../assets/styles/borrow.css" text="Borrow" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

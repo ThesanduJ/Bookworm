@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="206.0" prefWidth="955.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.BookCardFormController">
+   <children>
+      <Label layoutX="69.0" layoutY="33.0" prefHeight="33.0" prefWidth="141.0" text="Book name :" textFill="WHITE">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="528.0" layoutY="76.0" prefHeight="33.0" prefWidth="105.0" text="Due Date :" textFill="WHITE">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="76.0" prefHeight="33.0" prefWidth="124.0" text="Borrow Date :" textFill="WHITE">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="17.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnReturn" buttonType="RAISED" layoutX="319.0" layoutY="146.0" onAction="#btnReturnOnAction" prefHeight="24.0" prefWidth="275.0" stylesheets="@../../assets/styles/book.css" text="Return" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblBookname" layoutX="200.0" layoutY="34.0" prefHeight="33.0" prefWidth="338.0" text="Harrie Porter" textFill="WHITE">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBorrowDate" layoutX="219.0" layoutY="76.0" prefHeight="33.0" prefWidth="237.0" text="2024-01-02" textFill="WHITE">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDueDate" layoutX="638.0" layoutY="76.0" prefHeight="33.0" prefWidth="323.0" text="2024-02-02" textFill="#bf1818">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="531.0" layoutY="33.0" prefHeight="33.0" prefWidth="98.0" text="Category:" textFill="WHITE">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCategory" layoutX="634.0" layoutY="34.0" prefHeight="33.0" prefWidth="185.0" text="Harrie Porter" textFill="WHITE">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

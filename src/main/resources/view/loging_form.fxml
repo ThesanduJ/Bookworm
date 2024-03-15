@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="686.0" prefWidth="985.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="686.0" fitWidth="1239.0" layoutX="-23.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/images/pexels-olga-lioncat-7244576.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00000087" height="686.0" stroke="BLACK" strokeType="INSIDE" width="1006.0" />
+      <Label layoutX="236.0" layoutY="67.0" prefHeight="149.0" prefWidth="581.0" text="Welcome to BookWorm" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAdminLogin" buttonType="RAISED" layoutX="186.0" layoutY="276.0" onAction="#btnAdminLoginOnAction" prefHeight="62.0" prefWidth="198.0" text="Login" textFill="#b8565600">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons/icons8-user-shield-96.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnUserLogin" buttonType="RAISED" layoutX="671.0" layoutY="266.0" onAction="#btnUserLoginOnAction" prefHeight="62.0" prefWidth="198.0" text="Login" textFill="#b8565600">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons/icons8-users-96.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label layoutX="229.0" layoutY="488.0" text="Admin" textFill="WHITE">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="733.0" layoutY="488.0" text="User" textFill="WHITE">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
